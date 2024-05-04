@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Inatel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img id="logo-inatel" src="./assets/white_logo-Inatel.png" alt="Logo Inatel">
+    </header>
+    <div class="login-container">
+        <form action="/submit-your-login-form" method="POST">
+            <select id="courses" name="courses" required>
+                <option value="" disabled selected>- Selecione seu curso -</option>
+                <option value="comp-eng">Engenharia da Computação</option>
+                <option value="control-autom-eng">Engenharia de Controle e Automação</option>
+                <option value="biomed-eng">Engenharia Biomédica</option>
+                <option value="telecom-eng">Engenharia de Telecomunicações</option>
+                <option value="soft-eng">Engenharia de Software</option>
+                <option value="elec-eng">Engenharia Elétrica</option>
+                <option value="prod-eng">Engenharia de Produção</option>
+                <option value="comp-tech">Tec. em Redes de Computadores</option>
+                <option value="ind-auto-tech">Tec. em Automação Industrial</option>
+                <option value="telecom-mgmt-tech">Tec. em Gestão de Telecomunicações</option>
+                <option value="special-student">Curso de Aluno Especial</option>
+                <option value="elec-eng-electronics">Engenharia Elétrica (modalidade em Eletrônica)</option>
+            </select>
+
+            <label for="registration">Matrícula</label>
+            <input type="text" id="registration" name="registration" placeholder="136" required>
+
+            <label for="password">Senha</label>
+            <input type="password" id="password" name="password" placeholder="1234" required>
+
+            <button type="submit">Entrar</button>
+        </form>
+        <a href="/forgot-password">Esqueceu a senha?</a>
+        <a href="/privacy">Privacidade</a>
+    </div>
+</body>
+
+</html>

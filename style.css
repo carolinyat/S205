@@ -1,0 +1,191 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #414bb2;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo-inatel {
+    width: 10%;
+}
+
+.login-container {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login-container form {
+    margin-top: 20px;
+}
+
+input[type="text"],
+input[type="password"],
+select {
+    width: 90%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 90%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #414bb2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0a0f5b;
+}
+
+a {
+    display: block;
+    margin-top: 10px;
+    color: #0066cc;
+    text-decoration: none;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #414bb2;
+    /* A cor de fundo azul */
+}
+
+.header {
+    background-color: #414bb2;
+    /* Cor de fundo do cabeçalho */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 24px;
+}
+
+.container {
+    padding: 10px;
+}
+
+.disciplina {
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    width: 70%;
+}
+
+#disciplinas-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.disciplina img {
+    width: 60px;
+    /* Ajuste conforme necessário */
+    margin-right: 10px;
+}
+
+.user-header {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 10px;
+    flex-direction: row;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    justify-content: space-between;
+}
+
+.menu-icon img,
+.profile-icon img {
+width: 30px;
+/* Ajustar tamanho conforme necessário */
+}
+
+.notification-icon img,
+.email-icon img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.menu-icon,
+.profile-icon {
+    padding: 10px;
+    /* Espaço em torno dos ícones */
+}
+
+.user-info h1 {
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+
+.news p {
+    margin: 5px 0;
+    color: white;
+    /* Cor cinza para o texto */
+    font-size: 14px;
+    /* Tamanho da fonte para o texto */
+}
+
+.news {
+    display: flex;
+    flex-direction: column;
+}
+
+.email-icon,
+.notification-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-info {
+    flex: 1;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.info p {
+    margin: 5px 0;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #343a40;
+    /* Cor de fundo do rodapé */
+    padding: 10px 0;
+}
+
+footer img {
+    width: 30px;
+    /* Ajuste conforme necessário */
+}
