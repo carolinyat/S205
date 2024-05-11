@@ -7,7 +7,7 @@ html {
     font-style: normal;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    background-color: #414bb2;
 }
 
 header {
@@ -61,20 +61,15 @@ button:hover {
     background-color: #0a0f5b;
 }
 
+.logo-footer {
+    width: 4%;
+}
+
 a {
     display: block;
     margin-top: 10px;
     color: #0066cc;
     text-decoration: none;
-}
-
-body,
-html {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #414bb2;
-    /* A cor de fundo azul */
 }
 
 .header {
@@ -98,7 +93,7 @@ html {
     padding: 10px;
     display: flex;
     align-items: center;
-    width: 70%;
+    width: 40%;
 }
 
 #disciplinas-list {
@@ -180,6 +175,7 @@ html {
 
 .info p {
     margin: 5px 0;
+    font-size: 13px;
 }
 
 footer {
