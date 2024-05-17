@@ -1,5 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+/* Importação de fontes */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap');
 
+/* Estilos globais */
 body,
 html {
     font-family: "Poppins", sans-serif;
@@ -10,6 +12,212 @@ html {
     background-color: #414bb2;
 }
 
+a {
+    display: block;
+    margin-top: 10px;
+    color: #0066cc;
+    text-decoration: none;
+}
+
+/* Tela Inicial */
+.header {
+    background-color: #414bb2;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 24px;
+}
+
+.container {
+    padding: 10px;
+}
+
+.user-header {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 10px;
+    flex-direction: row;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    justify-content: space-between;
+}
+
+.menu-icon,
+.profile-icon {
+    padding: 10px;
+}
+
+.menu-icon img,
+.profile-icon img {
+    width: 30px;
+}
+
+.logo-inatel-blue img {
+    width: 100px;
+    height: auto;
+}
+
+.notification-icon img,
+.email-icon img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.email-icon,
+.notification-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-info {
+    flex: 1;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.user-info h1 {
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+
+.news {
+    display: flex;
+    flex-direction: column;
+}
+
+.news p {
+    margin: 5px 0;
+    color: white;
+    font-size: 14px;
+}
+
+#disciplinas-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.disciplina {
+    box-shadow: 0 2px 16px rgb(0 0 0 / 20%), 0 3px 10px rgb(0 0 0 / 10%) !important;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    width: 40%;
+}
+
+.disciplina img {
+    width: 60px;
+    margin-right: 10px;
+}
+
+.info p {
+    margin: 5px 0;
+    font-size: 13px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #343a40;
+    color: white;
+    font-size: 10px;
+}
+
+.wrapper img {
+    width: 30px;
+    margin-bottom: 6px;
+    margin-top: 5px;
+}
+
+.logo-footer {
+    width: 4%;
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+    /* .user-header {
+        flex-direction: column;
+    } */
+
+    .menu-icon img,
+    .profile-icon img {
+        width: 20px;
+        height: auto;
+    }
+
+    .disciplina {
+        width: 80%;
+    }
+
+    .news p,
+    .user-info h1 {
+        font-size: 16px;
+    }
+
+    .info p {
+        font-size: 12px;
+    }
+
+    .wrapper {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .user-header {
+        padding: 5px;
+    }
+
+    .menu-icon img,
+    .profile-icon img {
+        width: 25px;
+    }
+
+    .logo-inatel-blue img {
+        width: 40px;
+    }
+
+    .disciplina {
+        width: 100%;
+        padding: 5px;
+    }
+
+    .disciplina img {
+        width: 40px;
+    }
+
+    .user-info {
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    .news p,
+    .user-info h1 {
+        font-size: 13px;
+    }
+
+    .info p {
+        font-size: 10px;
+    }
+
+    .wrapper {
+        font-size: 10px;
+    }
+}
+
+/* Tela de Login */
 header {
     background-color: #414bb2;
     padding: 20px;
@@ -61,132 +269,31 @@ button:hover {
     background-color: #0a0f5b;
 }
 
-.logo-footer {
-    width: 4%;
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+    .login-container {
+        width: 80%;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    select,
+    button {
+        width: 100%;
+    }
 }
 
-a {
-    display: block;
-    margin-top: 10px;
-    color: #0066cc;
-    text-decoration: none;
-}
+@media (max-width: 480px) {
+    .login-container {
+        width: 95%;
+        padding: 10px;
+    }
 
-.header {
-    background-color: #414bb2;
-    /* Cor de fundo do cabeçalho */
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    font-size: 24px;
-}
+    header {
+        padding: 10px;
+    }
 
-.container {
-    padding: 10px;
-}
-
-.disciplina {
-    box-shadow: 0 2px 16px 0 rgb(0 0 0 / 20%), 0 3px 10px 0 rgb(0 0 0 / 10%) !important;
-    background-color: white;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    width: 40%;
-}
-
-#disciplinas-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.disciplina img {
-    width: 60px;
-    /* Ajuste conforme necessário */
-    margin-right: 10px;
-}
-
-.user-header {
-    display: flex;
-    align-items: center;
-    background-color: #f9f9f9;
-    padding: 10px;
-    flex-direction: row;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    justify-content: space-between;
-}
-
-.menu-icon img,
-.profile-icon img {
-    width: 30px;
-    /* Ajustar tamanho conforme necessário */
-}
-
-.notification-icon img,
-.email-icon img {
-    width: 20px;
-    margin-right: 10px;
-}
-
-.menu-icon,
-.profile-icon {
-    padding: 10px;
-    /* Espaço em torno dos ícones */
-}
-
-.user-info h1 {
-    color: white;
-    margin: 0;
-    padding: 0;
-    font-size: 18px;
-}
-
-.news p {
-    margin: 5px 0;
-    color: white;
-    /* Cor cinza para o texto */
-    font-size: 14px;
-    /* Tamanho da fonte para o texto */
-}
-
-.news {
-    display: flex;
-    flex-direction: column;
-}
-
-.email-icon,
-.notification-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.user-info {
-    flex: 1;
-    padding: 0 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-
-.info p {
-    margin: 5px 0;
-    font-size: 13px;
-}
-
-footer {
-    display: flex;
-    justify-content: space-around;
-    background-color: #343a40;
-    /* Cor de fundo do rodapé */
-    padding: 10px 0;
-}
-
-footer img {
-    width: 30px;
-    /* Ajuste conforme necessário */
+    #logo-inatel {
+        width: 20%;
+    }
 }
