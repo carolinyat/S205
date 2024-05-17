@@ -98,6 +98,21 @@ a {
     font-size: 14px;
 }
 
+.warnings {
+    color: white;
+    display: flex;
+}
+
+.line {
+    /* border: 2px solid;
+    border-image: linear-gradient(90deg, #9fa6f0f6, #fff); */
+    width: 100%;
+    height: 6px;
+    background-image: linear-gradient(90deg, #85addaf6 100%, #fff 50%);
+    margin-top: 11px;
+    margin-bottom: -10px;
+}
+
 #disciplinas-list {
     display: flex;
     flex-direction: column;
