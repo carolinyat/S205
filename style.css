@@ -101,6 +101,7 @@ a {
 .warnings {
     color: white;
     display: flex;
+    font-weight: 500;
 }
 
 .line {
@@ -112,6 +113,8 @@ a {
     margin-top: 11px;
     margin-bottom: -10px;
 }
+
+
 
 #disciplinas-list {
     display: flex;
@@ -128,6 +131,11 @@ a {
     display: flex;
     align-items: center;
     width: 40%;
+    transition: 0.5s;
+}
+
+.disciplina:hover {
+    transform: scale(1.02);
 }
 
 .disciplina img {
@@ -151,14 +159,14 @@ a {
 }
 
 .wrapper img {
-    width: 30px;
+    width: 40px;
     margin-bottom: 6px;
     margin-top: 5px;
 }
 
-.logo-footer {
-    width: 4%;
-}
+/* .logo-footer {
+    width: 6%;
+} */
 
 /* Media Queries para Responsividade */
 @media (max-width: 768px) {
