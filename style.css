@@ -55,16 +55,59 @@ a {
 .menu-icon,
 .profile-icon {
     padding: 10px;
+    position: relative;
+}
+
+.profile-icon .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: white;
+    color: black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.profile-icon .dropdown-menu p {
+    margin: 0;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-bottom: 1px solid #ccc;
+}
+
+.profile-icon .dropdown-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px;
+}
+
+.profile-icon .dropdown-menu ul li {
+    border-bottom: 1px solid #ccc;
+}
+
+.profile-icon .dropdown-menu ul li a {
+    display: block;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+.profile-icon .dropdown-menu ul li a:hover {
+    background-color: #f1f1f1;
 }
 
 .menu-icon img,
 .profile-icon img {
     width: 30px;
+    cursor: pointer;
 }
 
 .logo-inatel-blue img {
     width: 100px;
     height: auto;
+    cursor: pointer;
 }
 
 .notification-icon img,
@@ -222,6 +265,7 @@ body.dark-mode {
 
 /* Media Queries para Responsividade */
 @media (max-width: 768px) {
+
     .menu-icon img,
     .profile-icon img {
         width: 20px;
