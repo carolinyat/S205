@@ -6,72 +6,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Disciplinas</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="user-header">
-        <div class="menu-icon">
-            <img src="./assets/menu-icon.png" alt="Menu">
+    <div class="main-container">
+        <div class="user-header">
+            <div class="menu-icon">
+                <img src="./assets/menu-icon.png" alt="Menu">
+            </div>
+            <div class="logo-inatel-blue">
+                <img src="./assets/logo-Inatel.png" alt="">
+            </div>
+            <div class="profile-icon">
+                <img src="./assets/profile-icon.png" alt="Perfil">
+            </div>
         </div>
-        <div class="logo-inatel-blue">
-            <img src="./assets/logo-Inatel.png" alt="">
+        <div class="user-info">
+            <h1>Olá, Carol!</h1>
         </div>
-        <div class="profile-icon">
-            <img src="./assets/profile-icon.png" alt="Perfil">
+        <div class="news">
+            <div class="email-icon">
+                <img src="./assets/email-icon-inverted-lines.png" alt="">
+                <p>Você possui novo e-mail sobre seu processo de intercâmbio</p>
+            </div>
+            <div class="notification-icon">
+                <img src="./assets/notification-icon-inverted-lines.png" alt="">
+                <p>Você possui uma pendência no financeiro</p>
+            </div>
         </div>
+        <div class="line"></div>
+        <div id="disciplinas-list" class="container">
+            <p class="warnings">Suas aulas de hoje:</p>
+            <div class="disciplina">
+                <img src="./assets/redes-image.png" alt="Segurança em Redes">
+                <div class="info">
+                    <strong>Segurança em Redes</strong>
+                    <p>19h30 - Sala I-4</p>
+                    <p>Faltas: 6/10</p>
+                </div>
+            </div>
+            <div class="disciplina">
+                <img src="./assets/digital-image.png" alt="Eletrônica Digital">
+                <div class="info">
+                    <strong>Eletrônica Digital</strong>
+                    <p>21h30 - Sala IV-4</p>
+                    <p>Faltas: 2/15</p>
+                </div>
+            </div>
+            <p class="warnings">Sua próxima prova:</p>
+            <div class="disciplina">
+                <img src="./assets/analise-image.png" alt="Análise de Dados">
+                <div class="info">
+                    <strong>Análise de Dados</strong>
+                    <p>19h30 - Sala I-1</p>
+                    <p>Faltas: 0/5</p>
+                    <p class="prova-data"><strong>Prova:</strong> 20/05/2023</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    </div>
-    <div class="user-info">
-        <h1>Olá, Carol!</h1>
-    </div>
-    <div class="news">
-        <div class="email-icon">
-            <img src="./assets/email-icon-inverted-lines.png" alt="">
-            <p>Você possui novo e-mail sobre seu processo de intercâmbio</p>
-        </div>
-        <div class="notification-icon">
-            <img src="./assets/notification-icon-inverted-lines.png" alt="">
-            <p>Você possui uma pendência no financeiro</p>
-        </div>
-    </div>
-    <div class="line"></div>
-    <div id="disciplinas-list" class="container">
-        <p class="warnings">Suas aulas de hoje:</p>
-        <div class="disciplina">
-            <img src="./assets/redes-image.png" alt="Segurança em Redes">
-            <div class="info">
-                <strong>Segurança em Redes</strong>
-                <p>19h30 - Sala I-4</p>
-                <p>Faltas: 6/10</p>
-            </div>
-        </div>
-        <div class="disciplina">
-            <img src="./assets/digital-image.png" alt="Eletrônica Digital">
-            <div class="info">
-                <strong>Eletrônica Digital</strong>
-                <p>21h30 - Sala IV-4</p>
-                <p>Faltas: 2/15</p>
-            </div>
-        </div>
+    <footer class="wrapper">
+        <img class="logo-footer" src="./assets/white_logo-Inatel.png" alt="">
+        Developed by Caroliny Abreu - Inatel Student 💙
+    </footer>
 
-        <p class="warnings">Sua próxima prova:</p>
-        <div class="disciplina">
-            <img src="./assets/analise-image.png" alt="Análise de Dados">
-            <div class="info">
-                <strong>Análise de Dados</strong>
-                <p>19h30 - Sala I-1</p>
-                <p>Faltas: 0/5</p>
-                <p class="prova-data"><strong>Prova:</strong> 20/05/2023</p>
-            </div>
-        </div>
-    </div>
+    <!-- Botão de alternar tema -->
+    <button id="theme-toggle" class="theme-toggle">🌙</button>
+
+    <!-- Referência ao arquivo JavaScript -->
+    <script src="script.js"></script>
 </body>
-
-<footer class="wrapper">
-    <img class="logo-footer" src="./assets/white_logo-Inatel.png" alt="">
-    Developed by Caroliny Abreu - Inatel Student 💙
-</footer>
 
 </html>
