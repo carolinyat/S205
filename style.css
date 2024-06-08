@@ -53,7 +53,8 @@ a {
 }
 
 .menu-icon,
-.profile-icon {
+.profile-icon,
+.notification-icon {
     padding: 10px;
     position: relative;
 }
@@ -99,7 +100,8 @@ a {
 }
 
 .menu-icon img,
-.profile-icon img {
+.profile-icon img,
+.notification-icon img {
     width: 30px;
     cursor: pointer;
 }
@@ -124,7 +126,6 @@ a {
 }
 
 .user-info {
-    /* flex: 1; */
     padding: 0 10px;
     display: flex;
     flex-direction: column;
@@ -145,12 +146,19 @@ a {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.news:hover {
+    text-decoration: underline;
+    transform: scale(1.01);
 }
 
 .news p {
     margin: 5px 0;
     color: white;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .warnings {
@@ -415,4 +423,116 @@ button:hover {
     #logo-inatel {
         width: 20%;
     }
+}
+
+/* Estilos adicionais do Material Design Kit */
+:root {
+    --cor-click: #126ae2;
+    /* Click */
+    --cor-sombra: #0a599b;
+    /* Azul Escuro */
+    --cor-text: black;
+    /* Preto */
+    --cor-back1: #edf2f4;
+    /* Azul claro */
+    --cor-back2: #6a937a;
+    /* Verde Escuro */
+
+    --md-sys-color-primary: #126ae2;
+    --md-sys-color-on-primary: #FFFFFF;
+    --md-sys-color-primary-container: #142583;
+    --md-sys-color-on-primary-container: #002020;
+}
+
+/* Estilos do Material Design Components */
+.mdc-button {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    line-height: 1.25rem;
+    font-weight: 500;
+    letter-spacing: 0.0892857em;
+    text-transform: uppercase;
+    border-radius: 4px;
+    color: var(--md-sys-color-on-primary);
+    background-color: var(--md-sys-color-primary);
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.mdc-button:hover {
+    background-color: var(--md-sys-color-primary-container);
+}
+
+.mdc-dialog__container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.mdc-dialog__surface {
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 500px;
+    padding: 1.5rem;
+}
+
+.mdc-dialog__title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.mdc-dialog__content {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.mdc-dialog__actions {
+    display: flex;
+    justify-content: center;
+}
+
+.mdc-dialog__button {
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.0892857em;
+    text-transform: uppercase;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    color: var(--md-sys-color-on-primary);
+    background-color: var(--md-sys-color-primary);
+    border: none;
+    cursor: pointer;
+}
+
+.mdc-dialog__button:hover {
+    background-color: var(--md-sys-color-primary-container);
+}
+
+.mdc-dialog__scrim {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.32);
+    z-index: 999;
+}
+
+.mdc-dialog--open {
+    display: block;
+}
+
+.mdc-dialog--closed {
+    display: none;
 }
