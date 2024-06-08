@@ -1,0 +1,218 @@
+/* Importação de fontes */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+
+/* Estilos adicionais do Material Design Kit */
+:root {
+    --cor-click: #126ae2; /* Click */
+    --cor-sombra: #0a599b; /* Azul Escuro */
+    --cor-text: black; /* Preto */
+    --cor-back1: #edf2f4; /* Azul claro */
+    --cor-back2: #6a937a; /* Verde Escuro */
+
+    --md-sys-color-primary: #126ae2;
+    --md-sys-color-on-primary: #FFFFFF;
+    --md-sys-color-primary-container: #142583;
+    --md-sys-color-on-primary-container: #002020;
+
+    --cor-fundo: #414bb2; /* Fundo principal */
+    --cor-branco: #FFFFFF; /* Branco */
+    --cor-preto: #000000; /* Preto */
+    --cor-linha: #85addaf6; /* Cor da linha */
+    --cor-fundo-escuro: #121212; /* Fundo do tema escuro */
+    --cor-fundo-claro: #f9f9f9; /* Fundo claro */
+    --cor-fundo-container: #ffffff; /* Fundo container */
+    --cor-sombra-container: rgba(0, 0, 0, 0.1); /* Sombra container */
+    --cor-hover: #0a0f5b; /* Cor do hover */
+    --cor-hover-link: #0066cc; /* Cor do hover link */
+    --cor-fundo-escuro-secundario: #1e1e1e; /* Fundo escuro secundário */
+    --cor-fundo-escuro-terciario: #2c2c2c; /* Fundo escuro terciário */
+    --cor-fundo-rodape: #343a40; /* Fundo do rodapé */
+    --cor-e0e0e0: #e0e0e0; /* Cor do texto no modo escuro */
+}
+
+/* Estilos globais */
+body,
+html {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    background-color: var(--cor-fundo);
+    color: var(--cor-branco);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    display: block;
+    margin-top: 10px;
+    color: var(--cor-hover-link);
+    text-decoration: none;
+}
+
+/* Tela Login */
+header {
+    background-color: var(--cor-fundo);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo-inatel {
+    width: 10%;
+}
+
+.container {
+    flex: 1;
+}
+
+.login-container {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: var(--cor-fundo-container);
+    box-shadow: 0 4px 8px var(--cor-sombra-container);
+    text-align: center;
+}
+
+.login-container form {
+    margin-top: 20px;
+}
+
+label {
+    color: var(--cor-text);
+}
+
+input[type="text"],
+input[type="password"],
+select {
+    width: 90%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 90%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: var(--cor-fundo);
+    color: var(--cor-branco);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--cor-hover);
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-fundo-rodape);
+    color: var(--cor-branco);
+    font-size: 10px;
+    padding: 10px 0;
+}
+
+.wrapper img {
+    width: 40px;
+    margin-bottom: 6px;
+    margin-top: 5px;
+}
+
+/* Botão de alternar tema */
+.theme-toggle {
+    position: fixed;
+    bottom: 7px;
+    right: 20px;
+    background-color: var(--cor-fundo);
+    color: var(--cor-branco);
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 2px 10px var(--cor-sombra-container);
+}
+
+.theme-toggle:hover {
+    background-color: var(--cor-hover);
+}
+
+/* Tema escuro */
+body.dark-mode {
+    background-color: var(--cor-fundo-escuro);
+    color: var(--cor-e0e0e0);
+}
+
+.dark-mode .header,
+.dark-mode .user-header,
+.dark-mode .news p,
+.dark-mode .warnings,
+.dark-mode .line,
+.dark-mode {
+    background-color: var(--cor-fundo-escuro-secundario);
+    color: var(--cor-e0e0e0);
+}
+
+.dark-mode {
+    background-color: var(--cor-fundo-escuro-terciario);
+    color: var(--cor-e0e0e0);
+}
+
+.dark-mode .wrapper {
+    background-color: var(--cor-fundo-escuro-secundario);
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+    .login-container {
+        width: 80%;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    select,
+    button {
+        width: 100%;
+    }
+
+    .wrapper {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-container {
+        width: 95%;
+        padding: 10px;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    #logo-inatel {
+        width: 20%;
+    }
+
+    .wrapper {
+        font-size: 10px;
+    }
+}

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Inatel</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleLogin.css">
 </head>
 
 <body>
@@ -14,7 +14,7 @@
             <img id="logo-inatel" src="./assets/white_logo-Inatel.png" alt="Logo Inatel">
         </header>
         <div class="login-container">
-            <form action="/submit-your-login-form" method="POST">
+            <form id="login-form" action="javascript:void(0);" method="POST">
                 <select id="courses" name="courses" required>
                     <option value="" disabled selected>- Selecione seu curso -</option>
                     <option value="comp-eng">Engenharia da Computação</option>
@@ -53,8 +53,16 @@
     <button id="theme-toggle" class="theme-toggle">🌙</button>
 
     <!-- Referência ao arquivo JavaScript -->
-    <script src="script.js"></script>
-</body>
+    <script>
+        document.getElementById('login-form').addEventListener('submit', function (e) {
+            e.preventDefault(); // Previne o comportamento padrão do formulário
+            window.location.href = 'telaInicial.html'; // Redireciona para telaInicial.html
+        });
 
+        document.getElementById('theme-toggle').addEventListener('click', function () {
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
+</body>
 
 </html>
