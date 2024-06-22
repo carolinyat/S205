@@ -33,3 +33,24 @@
 </body>
 
 </html>
+
+<script>
+    // Redirecionar para a tela de pré-inscrição
+    const subscribeButton = document.querySelector('.subscribe-button');
+    subscribeButton.addEventListener('click', () => {
+        window.location.href = 'telaPreInscricao.html';
+    });
+
+    // Voltar para a página anterior
+    const backButton = document.getElementById('back-button');
+    backButton.addEventListener('click', () => {
+        window.history.back();
+    });
+
+    // Redirecionar para a tela inicial
+    const homeButton = document.getElementById('home-button');
+    homeButton.addEventListener('click', () => {
+        window.location.href = 'telaInicial.html';
+    });
+
+</script>

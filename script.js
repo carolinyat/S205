@@ -55,3 +55,36 @@ function closeDialog() {
     document.getElementById('dialog').classList.remove('mdc-dialog--open');
 }
 
+// Função para alternar tema
+const themeToggle = document.getElementById('theme-toggle');
+themeToggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+});
+
+// Controlar exibição do menu suspenso do ícone de menu
+const menuButton = document.getElementById('menu-button');
+const menuDropdown = document.querySelector('.menu-dropdown');
+menuButton.addEventListener('click', () => {
+    menuDropdown.style.display = menuDropdown.style.display === 'block' ? 'none' : 'block';
+});
+
+// Fechar o menu suspenso ao clicar fora dele
+document.addEventListener('click', (event) => {
+    if (!menuButton.contains(event.target) && !menuDropdown.contains(event.target)) {
+        menuDropdown.style.display = 'none';
+    }
+});
+
+// Controlar exibição do menu suspenso do ícone de perfil
+const profileButton = document.querySelector('.profile-icon img');
+const profileDropdown = document.querySelector('.profile-dropdown');
+profileButton.addEventListener('click', () => {
+    profileDropdown.style.display = profileDropdown.style.display === 'block' ? 'none' : 'block';
+});
+
+// Fechar o menu suspenso ao clicar fora dele
+document.addEventListener('click', (event) => {
+    if (!profileButton.contains(event.target) && !profileDropdown.contains(event.target)) {
+        profileDropdown.style.display = 'none';
+    }
+});

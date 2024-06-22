@@ -84,7 +84,7 @@ header {
 }
 
 header img {
-    width: 30px;
+    width: 20px;
     cursor: pointer;
 }
 
@@ -126,7 +126,7 @@ h1 {
 }
 
 .subscribe-button {
-    background-color: var(--md-sys-color-primary);
+    background-color: var(--cor-fundo);
     color: var(--md-sys-color-on-primary);
     border: none;
     border-radius: 5px;
@@ -134,7 +134,7 @@ h1 {
     cursor: pointer;
     margin-top: 20px;
     margin-bottom: 20px;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 500;
     box-shadow: 0 2px 4px var(--cor-sombra-container);
 }

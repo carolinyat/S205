@@ -67,4 +67,15 @@
         document.querySelector('.main-content').classList.remove("modal-open");
     });
 
+    // Voltar para a página anterior
+    const backButton = document.getElementById('back-button');
+    backButton.addEventListener('click', () => {
+        window.history.back();
+    });
+
+    // Redirecionar para a tela inicial
+    const homeButton = document.getElementById('home-button');
+    homeButton.addEventListener('click', () => {
+        window.location.href = 'telaInicial.html';
+    });
 </script>

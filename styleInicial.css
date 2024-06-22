@@ -459,3 +459,37 @@ body.dark-mode {
 .mdc-dialog--closed {
     display: none;
 }
+
+.menu-dropdown {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-color: var(--cor-fundo-container);
+    color: var(--cor-preto);
+    box-shadow: 0 4px 8px var(--cor-sombra-container);
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.menu-dropdown ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-dropdown ul li {
+    border-bottom: 1px solid #ccc;
+}
+
+.menu-dropdown ul li a {
+    display: block;
+    padding: 10px;
+    color: var(--cor-preto);
+    text-decoration: none;
+}
+
+.menu-dropdown ul li a:hover {
+    background-color: var(--cor-fundo-claro);
+}

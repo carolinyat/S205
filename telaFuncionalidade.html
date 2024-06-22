@@ -51,3 +51,25 @@
 </body>
 
 </html>
+
+<script>
+    // Adicionar evento de clique às bandeiras
+    const flagItems = document.querySelectorAll('.flag-item');
+    flagItems.forEach(item => {
+        item.addEventListener('click', () => {
+            window.location.href = 'telaEditais.html';
+        });
+    });
+
+    // Voltar para a página anterior
+    const backButton = document.getElementById('back-icon');
+    backButton.addEventListener('click', () => {
+        window.history.back();
+    });
+
+    // Redirecionar para a tela inicial
+    const homeButton = document.getElementById('home-icon');
+    homeButton.addEventListener('click', () => {
+        window.location.href = 'telaInicial.html';
+    });
+</script>
