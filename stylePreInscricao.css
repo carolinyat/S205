@@ -1,0 +1,257 @@
+/* Importação de fontes */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Reddit+Sans:ital,wght@0,200..900&display=swap');
+
+/* Estilos adicionais do Material Design Kit */
+:root {
+    --cor-click: #126ae2;
+    --cor-sombra: #0a599b;
+    --cor-text: black;
+    --cor-back1: #edf2f4;
+    --cor-back2: #6a937a;
+
+    --md-sys-color-primary: #126ae2;
+    --md-sys-color-on-primary: #FFFFFF;
+    --md-sys-color-primary-container: #142583;
+    --md-sys-color-on-primary-container: #002020;
+
+    --cor-fundo: #414bb2;
+    --cor-branco: #FFFFFF;
+    --cor-preto: #000000;
+    --cor-linha: #85addaf6;
+    --cor-fundo-escuro: #121212;
+    --cor-fundo-claro: #f9f9f9;
+    --cor-fundo-container: #ffffff;
+    --cor-sombra-container: rgba(0, 0, 0, 0.1);
+    --cor-hover: #0a0f5b;
+    --cor-hover-link: #0066cc;
+    --cor-fundo-escuro-secundario: #1e1e1e;
+    --cor-fundo-escuro-terciario: #2c2c2c;
+    --cor-fundo-rodape: #343a40;
+    --cor-e0e0e0: #e0e0e0;
+}
+
+/* Estilos globais */
+body,
+html {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    background-color: var(--cor-fundo);
+    color: var(--cor-branco);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    display: block;
+    margin-top: 10px;
+    color: var(--cor-hover-link);
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: var(--cor-fundo-container);
+    color: var(--cor-fundo);
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor-linha);
+    align-items: center;
+    padding: 20px;
+}
+
+header img {
+    width: 30px;
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+/* Estilos do formulário */
+.pre-inscricao-container {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: var(--cor-fundo-container);
+    box-shadow: 0 4px 8px var(--cor-sombra-container);
+    text-align: center;
+}
+
+.pre-inscricao-container form {
+    margin-top: 20px;
+}
+
+p {
+    color: black;
+}
+
+label {
+    color: var(--cor-text);
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    width: 90%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 90%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: var(--cor-fundo);
+    color: var(--cor-branco);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--cor-hover);
+}
+
+/* Botão de alternar tema */
+.theme-toggle {
+    position: fixed;
+    bottom: 7px;
+    right: 20px;
+    background-color: var(--cor-fundo);
+    color: var(--cor-branco);
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 2px 10px var(--cor-sombra-container);
+}
+
+.theme-toggle:hover {
+    background-color: var(--cor-hover);
+}
+
+/* Modal */
+.modal {
+    display: none; /* Escondido por padrão */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4); /* Cor de fundo com opacidade */
+}
+
+.modal-content {
+    background-color: var(--cor-fundo-container);
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 300px;
+    text-align: center;
+    border-radius: 35px;
+}
+
+.close-btn {
+    color: var(--cor-hover-link);
+    text-decoration: none;
+    display: block;
+    margin-top: 20px;
+    border-top: 1px solid;
+}
+
+/* Para desfoque do fundo */
+body.modal-open .main-content {
+    filter: blur(5px);
+}
+
+/* Tema escuro */
+body.dark-mode {
+    background-color: var(--cor-fundo-escuro);
+    color: var(--cor-e0e0e0);
+}
+
+.dark-mode .pre-inscricao-container {
+    background-color: var(--cor-fundo-escuro-terciario);
+}
+
+.dark-mode input[type="text"],
+.dark-mode input[type="email"],
+.dark-mode select {
+    background-color: var(--cor-fundo-escuro-secundario);
+    color: var(--cor-e0e0e0);
+    border: 1px solid var(--cor-e0e0e0);
+}
+
+.dark-mode label {
+    color: var(--cor-e0e0e0);
+}
+
+.dark-mode button {
+    background-color: var(--cor-hover);
+}
+
+.dark-mode button:hover {
+    background-color: var(--cor-fundo);
+}
+
+.dark-mode .modal-content {
+    background-color: var(--cor-fundo-escuro-terciario);
+    color: var(--cor-e0e0e0);
+}
+
+.dark-mode .close-btn {
+    color: var(--cor-e0e0e0);
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+    .pre-inscricao-container {
+        width: 80%;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select,
+    button {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .pre-inscricao-container {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .wrapper {
+        font-size: 10px;
+    }
+}

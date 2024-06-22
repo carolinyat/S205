@@ -54,3 +54,4 @@ function closeDialog() {
     document.getElementById('dialog').classList.add('mdc-dialog--closed');
     document.getElementById('dialog').classList.remove('mdc-dialog--open');
 }
+
